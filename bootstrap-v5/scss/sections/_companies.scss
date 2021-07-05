@@ -1,0 +1,36 @@
+@use '../custom' as *;
+
+.connect {
+    padding: 0 0 1rem 0;
+
+    &__logo-box {
+        max-width: 100%;
+        height: 5rem;
+        margin-bottom: 1rem;
+        padding-top: 1rem;
+        text-align: center;
+        position: relative;
+        background-color: $off-white;
+        border-radius: 5%;
+
+        @include media-breakpoint-up(lg) {
+            height: 10rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+
+
+        }
+        &:hover {
+            filter: drop-shadow(1px 1px 10px $light-blue);
+        }
+        img {
+            height: 75%;
+
+            @include media-breakpoint-up(lg) {
+                height: 100%;
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,21 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.footer{
+    padding-top: 1rem;
+    background-color: $dark-blue;
+}
+
+//Style Social Media Content
+.footer-social {
+    a {
+        color: $white;
+
+        i{
+            font-size: 1.4rem;
+            margin-left: 1rem;
+        }
+    }
+
+}
+

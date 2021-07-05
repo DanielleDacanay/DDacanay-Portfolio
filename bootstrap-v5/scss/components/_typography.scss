@@ -1,0 +1,154 @@
+@use '../custom' as *;
+
+.display-2 {
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+
+    &--intro {
+        display: inline-block;
+        font-weight: 700;
+        color: $dark-blue;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    &--description {
+        font-size: 1rem;
+        display: block;
+        margin-top: 1.2rem;
+        text-transform: none;
+
+        @include media-breakpoint-up(lg){
+            font-size: 1.5rem;
+            display: inline-block;
+        } 
+    }
+}
+
+.display-3 {
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+
+    &--title {
+        font-size: 1rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        display: inline-block;
+        background-image: linear-gradient(to right, $peach-dark, $peach-light);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;  
+        
+        @include media-breakpoint-up(lg) {
+            font-size: 1.8rem;
+        }
+    }
+
+}
+
+.footer-bottom{
+    position: relative;
+    padding-bottom: 2rem;
+
+    &__info {
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.4rem;
+        color: $gray-blue !important;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1rem;
+        color: $gray-blue !important;
+
+    }
+}
+
+.accentText {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: $peach-dark;
+    display: inline-block;
+    padding-left: 0.7rem;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1.25rem;
+    }
+}
+
+.accentText-header {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: $peach-dark;
+    display: inline-block;
+    padding-left: 0.7rem;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 2.25rem;
+        font-weight: 700;
+    }
+}
+
+.fieldName{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: $dark-blue;
+    display: inline-block;
+}
+
+//Header Line Light
+.header-line::before{
+    content: "";
+    width: 10rem;
+    height: 0.35rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+}
+.header-line::after{
+    content: "";
+    width: 7rem;
+    height: 0.2rem;
+    margin: 0.1rem auto;
+    margin-bottom: 0.005rem;
+    display: block;
+    background-color: $primary;
+}
+
+//Header Line Dark
+.header-line-dark::before{
+    content: "";
+    width: 10rem;
+    height: 0.35rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $dark-blue;
+}
+.header-line-dark::after{
+    content: "";
+    width: 7rem;
+    height: 0.2rem;
+    margin: 0.1rem auto;
+    margin-bottom: 1rem;
+    display: block;
+    background-color: $dark-blue;
+}
+
+//Right border
+.border-right {
+    border-right: 0.1rem solid $light-blue;
+    height: 100%;
+}
+
+.darkHyperlink {
+    color: $peach-dark;
+
+    &:hover{
+        color: $peach-light !important;
+    }
+}

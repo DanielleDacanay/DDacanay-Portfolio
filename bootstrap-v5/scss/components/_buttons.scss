@@ -1,0 +1,83 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.btn-rounded {
+    //this mixin hides buttons for smaller devices
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+    //end of mixin
+    position: relative;
+    padding: 1rem 4.375rem 1rem 1.25rem;
+    font-weight: 700;
+    margin: 0;
+    border: 0.1rem solid rgba($white, 0.6);
+    background-color: $white;
+
+    span {
+        position: absolute;
+        background-color: $primary;
+        width: 2.5rem;
+        height: 2.5rem;
+        top: 50%;
+        right: 9px;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background-repeat: no-repeat;
+
+        i {
+            color:$dark-blue;
+            font-size: 1rem;
+            line-height: 2.5rem;
+            background-repeat: no-repeat;
+            
+        }
+    }
+
+    &:hover {
+       // @include gradient;
+       background-color: $med-blue;
+       color: $white;
+    
+        span {
+            background-color: $dark-blue;
+            i {
+                color: $white;
+            }
+        }
+    }
+}
+
+.btn-submit {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $dark-blue !important;
+    font-weight: 700;
+    margin: 0;
+    border: 0.15rem solid rgba($peach-dark, 0.5);
+    width: 50%;
+    background-color: $off-white;
+
+    &:hover {
+       // @include gradient;
+       background-color: $peach-dark;
+       color: $white !important;
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    right: 1.875rem;
+    bottom: 1.875rem;
+    z-index: 9999;
+
+    i {
+        color: $peach-dark;
+        font-size: 1rem;
+        @include absCenter;
+    }
+}

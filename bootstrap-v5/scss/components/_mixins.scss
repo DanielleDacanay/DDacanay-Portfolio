@@ -1,0 +1,28 @@
+//create mixin for the gradient since we will be using it throughout the website
+@use '../custom' as *;
+
+//GRADIENT MIXIN
+@mixin gradient{
+    background: linear-gradient(to right, rgba($primary,0.95),rgba($off-white,0.95));
+}
+
+//ABSOLUTE CENTER, use this mixin everytime you want to position something in the center
+@mixin absCenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//Variation because absolute center didn't work with the image I selected
+@mixin graphicCenter{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin fadeTransition{
+    transition-duration: 450ms;
+    transition-property: all;
+}

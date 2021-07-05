@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--step 1: set up the viewport-->
+    <title>DDACANAY | Portfolio</title> <!--step 2: give the page a title and link it to the style sheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--------------------------------------------NAVBAR SECTION: START------------------------------------------------>
+    <nav class="navbar navbar-expand-lg navbar-light menu shadow fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="images/ddacanay.png" width="200px" height="30px"alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <ul class="navbar-nav" style="list-style-type:none;">
+                <li><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                <li><a class="nav-link" href="#interests">Interests</a></li>
+                <li><a class="nav-link" href="#work">Work</a></li>
+                <li><a class="nav-link" href="#portfolio">Projects</a></li>
+                <li><a class="nav-link" href="#connect">Contact</a></li>
+              <!--
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              -->
+            </ul>
+              <button type="button" class="rounded-pill btn-rounded">Email
+                <span>
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </button>
+            </div>
+          </div>
+      </nav>
+    <!--------------------------------------------NAVBAR SECTION: END------------------------------------------------>
+
+    <!--------------------------------------------INTRO SECTION: START------------------------------------------------>
+      <section id="home" class="intro-section">
+        <div class="container">
+          <div class="row align-items-center">
+          <!--first column-->
+          <div class="col-md-6 intros text-start">
+            <h1 class="display-2">
+              <span class="display-2--intro">Hi! I'm Danielle</span>
+              <span class="display-2--description lh-base">I am a business analyst. My brief description will go here.</span>
+            </h1>
+            <button type="button" class="rounded-pill btn-rounded">Learn more
+              <span>
+                <i class="fas fa-angle-right"></i>
+              </span>
+            </button>
+          </div>
+          <!--second column-->
+          <div class="col-md-6 intros text-end">
+            <!-- adding a video -->
+            <div class="video-box">
+              <img src="images/graphics/Coworking _Monochromatic.png" alt="tech illustration" class="img-fluid">
+              <a href="#" class="glightbox">
+                <!--using bootstrap positioning in the html instead of the mixin:
+                  class="position-absoute top-50 start-50 translate-middle"
+                -->
+                <span>
+                  <i class="fas fa-play-circle"></i>
+                </span>
+                <span class="border-animation"></span>
+                <span class="border-animation--border1"></span>
+                <span class="border-animation--border2"></span>
+              </a>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!--wave design from getwaves.io-->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L34.3,138.7C68.6,117,137,75,206,80C274.3,85,343,139,411,176C480,213,549,235,617,224C685.7,213,754,171,823,149.3C891.4,128,960,128,1029,144C1097.1,160,1166,192,1234,181.3C1302.9,171,1371,117,1406,90.7L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+      </section>
+    <!--------------------------------------------INTRO SECTION: END------------------------------------------------>
+
+  <!--------------------------------------------SERVICES (INTERESTS) SECTION: START------------------------------------------------>
+  <section id="interests" class="interests">
+    <div class="container">
+      <div class="row">
+        <h1 class="display-3 fw-bold">Interests</h1>
+        <div class="header-line mb-1"></div>
+      </div>
+    <!--description content-->
+      <div class="row pt-2 pb-2 mb-3">
+        <!--intro desc first column-->
+        <div class="col-md-6 border-right">
+          <div class="bg-white p-3">
+            <h2 class="fw-bold text-center">Will place description of my interests here.</h2>
+          </div>
+        </div>
+        <!--intro desc second column-->
+        <div class="col-md-6">
+          <div class="bg-white p-4 text-start"> <!--text-start aligns text to the left -->
+            <p class="fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--interests content-->
+    <div class="container">
+      <!-- Business Analyst: start -->
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 interests mt-4">
+          <div class="interests__content">
+            <div class="icon fas fa-project-diagram"></div>
+            <h3 class="display-3--title mt-1">Business Analyst</h3>
+            <p class="lh-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, consequuntur natus? Reprehenderit, iste repudiandae quae culpa sed voluptates sit aspernatur odio obcaecati magni alias corrupti tenetur voluptatem numquam!
+            </p>
+          </div>
+        </div>
+        <!--BA graphic-->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 interests mt-4 text-end">
+          <div class="interests__pic">
+            <img src="images/graphics/Brainstorming session _Monochromatic.png" alt="BA illustration" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <!-- Business Analyst: end-->
+      <!-- UX: start-->
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 interests mt-4 text-start">
+          <div class="interests__pic">
+            <img src="images/graphics/User interface_Monochromatic.png" alt="UI illustration" class="img-fluid">
+          </div>
+        </div>
+        <!--UX text-->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 interests mt-4">
+          <div class="interests__content">
+          <div class="icon fas fa-users"></div>
+          <h3 class="display-3--title mt-1">UX Research/UI Design</h3>
+          <p class="lh-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, consequuntur natus? Reprehenderit, iste repudiandae quae culpa sed voluptates sit aspernatur odio obcaecati magni alias corrupti tenetur voluptatem numquam!
+          </p>
+        </div>
+        </div>
+      </div>
+      <!-- UX: end -->
+      <!-- Web Development: start-->
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 interests mt-4">
+          <div class="interests__content">
+          <div class="icon fas fa-code"></div>
+          <h3 class="display-3--title mt-1">Web Development</h3>
+          <p class="lh-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, consequuntur natus? Reprehenderit, iste repudiandae quae culpa sed voluptates sit aspernatur odio obcaecati magni alias corrupti tenetur voluptatem numquam!
+          </p>
+        </div>
+        </div>
+        <!--Dev graphic-->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 interests mt-4 text-end">
+          <div class="interests__pic">
+            <img src="images/graphics/Code Development _Monochromatic.png" alt="code illustration" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <!-- Web Development: end -->
+    </div>
+  </section>
+  <!--------------------------------------------SERVICES (INTERESTS) SECTION: END------------------------------------------------>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#d5e2ed" fill-opacity="1" d="M0,224L26.7,229.3C53.3,235,107,245,160,218.7C213.3,192,267,128,320,96C373.3,64,427,64,480,85.3C533.3,107,587,149,640,176C693.3,203,747,213,800,197.3C853.3,181,907,139,960,149.3C1013.3,160,1067,224,1120,229.3C1173.3,235,1227,181,1280,165.3C1333.3,149,1387,171,1413,181.3L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+  
+  <!--------------------------------------------FAQ (WORK) SECTION: START------------------------------------------------------>
+  <section id="work" class="work">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="display-3 fw-bold">Work</h1>
+        <div class="header-line-dark mb-1"></div>
+        <p class="lead">A quick snippet of my work history</p>
+      </div>
+      <!-- Accordion Content -->
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <div class="accordion" id="accordionExample">
+            <!-- Accordion Item 3: BA -->
+            <div class="accordion-item shadow mb-2">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Business Analyst
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>As a full-time senior Business Analyst at Ventera Corporation, my main responsibilities include:</strong>
+                  <ul>
+                    <li>Engaging with clients to determine underlying business problems</li>
+                    <li>Gathering requirements and proposing innovative solutions that meet their expectations</li>
+                    <li>Learning how end-users interact with the system to determine ways to improve the experience</li>
+                    <li>Create visual workflows and mockups for new functionality</li>
+                    <li>Serving as a Scrum Master and Product as needed</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion Item 2: ACT-IAC -->
+            <div class="accordion-item shadow mb-2">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ACT-IAC Associates Program
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <!-- Accordion Item 3: Certifications -->
+            <div class="accordion-item shadow mb-2">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Certifications
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li style="list-style-type: none;"><i class="fas fa-medal"></i> 
+                      <a href="https://bcert.me/shhkztkpp" target="_blank" class="darkHyperlink"> Certified Scrum Master</a> from ScrumAlliance</li>
+                    <li style="list-style-type: none;"><i class="fas fa-medal"></i>
+                      <a href="https://bcert.me/scgrbnkwy" target="_blank" class="darkHyperlink"> Certified Scrum Product Owner</a> from ScrumAlliance</li>
+                    <li style="list-style-type: none;"><i class="fas fa-medal"></i>
+                      <a href="https://freecodecamp.org/certification/ddacanay/responsive-web-design" target="_blank" class="darkHyperlink">Responsive Web Design</a> from freeCodeCamp</li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion Item 4: Skills -->
+            <div class="accordion-item shadow mb-2">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Skills
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the fourth item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <!-- End of Accordion Item 4 -->
+          </div>
+        </div>
+      </div>
+      <!-- End of Accordion Content -->
+    </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,32L80,74.7C160,117,320,203,480,213.3C640,224,800,160,960,138.7C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+   </section>
+  <!--------------------------------------------FAQ (WORK) SECTION: END-------------------------------------------------------->
+
+  <!--------------------------------------------PORTFOLIO SECTION: START------------------------------------------------------->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="display-3 fw-bold">Projects</h1>
+        <div class="header-line mb-3"></div>
+      </div>
+
+      <!-- Filter buttons -->
+      <div class="row mb-5 mt-1 g-3 text-center">
+        <div class="col-md-12">
+          <button class="btn btn-outline-secondary" type="button">All</button>
+          <button class="btn btn-outline-secondary" type="button">Websites</button>
+          <button class="btn btn-outline-secondary" type="button">Mockups</button>
+        </div>
+      </div>
+
+      <!-- Portfolio items -->
+      <div class="row">
+        <!-- Project 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/portfolio/webPortfolio.png" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>Personal Portfolio</h4>
+                <p>Website</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/portfolio/project2.png" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>project name goes here 2</h4>
+                <p>category project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/portfolio/project3.jpeg" alt="portfolio 3 image" title="portfolio 3 picture" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>project name goes here 3</h4>
+                <p>category project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/portfolio/project4.jpg" alt="portfolio 4 image" title="portfolio 4 picture" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>project name goes here 4</h4>
+                <p>category project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/portfolio/project5.jpeg" alt="portfolio 5 image" title="portfolio 5 picture" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>project name goes here 5</h4>
+                <p>category project</p>
+              </div>
+            </div>
+          </div>
+        </div>        
+        <!-- Project 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/portfolio/project6.jpeg" alt="portfolio 6 image" title="portfolio 6 picture" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>project name goes here 6</h4>
+                <p>category project</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <!-- Project 7 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/portfolio/project7.jpeg" alt="portfolio 7 image" title="portfolio 7 picture" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>project name goes here 7</h4>
+                <p>category project</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <!-- Project 8 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/portfolio/project8.jpeg" alt="portfolio 8 image" title="portfolio 8 picture" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>project name goes here 8</h4>
+                <p>category project</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <!-- Project 9 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/portfolio/project9.jpeg" alt="portfolio 9 image" title="portfolio 9 picture" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>project name goes here 9</h4>
+                <p>category project</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--------------------------------------------PORTFOLIO SECTION: END-------------------------------------------------------->
+
+    <!--------------------------------------------COMPANIES (CONNECT) SECTION: START------------------------------------------------>
+      <section id="connect" class="connect">
+        <div class="container">
+          <div class="row text-center">
+            <h1 class="display-3 mt-5 fw-bold">Contact</h1>
+            <div class="header-line mb-5"></div>
+          </div>
+        </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="connect__logo-box shadow-sm">
+            <a href='#' style='text-decoration: none;'>
+              <img src="images/graphics/Focused Working_Monochromatic.png" alt="Resume logo" title="Resume logo" class="img-fluid">
+              <span class="accentText">View my Resume</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="connect__logo-box shadow-sm">
+            <a href='#' style='text-decoration: none;'>
+            <img src="images/graphics/Sending emails_Monochromatic.png" alt="Emails logo" title="Emails logo" class="img-fluid">
+            <span class="accentText">Send an email</span>
+          </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="connect__logo-box shadow-sm">
+            <a href='https://www.linkedin.com/in/danielle-dacanay-9385aa143/' style='text-decoration: none;' target="_blank">
+              <img src="images/graphics/LinkedIn_Monochromatic.png" alt="Linkedin Logo" title="Linkedin logo" class="img-fluid">
+              <span class="accentText">Visit my LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--------------------------------------------COMPANIES (CONNECT) SECTION: END------------------------------------------------>
+
+  <!--------------------------------------------GET STARTED (MESSAGE) SECTION: START------------------------------------------------>
+  <section id="get-started" class="get-started">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="accentText-header mt-4">
+          <i class="fas fa-paper-plane"></i> Send a message</h1>
+      </div>
+    </div>
+    <div class="form w-100 p-5">
+        <form action="#" class="row">
+          <!--Name field-->
+          <div class="mb-3">
+            <label id="name-label" for="name">
+              <p class="fieldName">Name *</p>
+            </label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+          <!--Email field-->
+          <div class="mb-3">
+            <label id="email-label" for="email">
+              <p class="fieldName">Email *</p>
+            </label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <!--Message field-->
+          <div class="mb-3">
+            <label id="message-label" for="message">
+              <p class="fieldName">Message *</p>
+            </label>
+            <textarea id="message" name="message" rows="4" cols="50" class="form-control" required></textarea>
+          </div>
+          <!--Submit-->
+          <input type="submit" id="submit" class="btn btn-submit mt-5 pt-3 pb-3" value="Submit">
+          </input>
+        </form>
+    </div>
+  <!--------------------------------------------GET STARTED (CONTACT) SECTION: END------------------------------------------------>
+
+  <!--------------------------------------------FOOTER: START------------------------------------------------>
+  <footer class="footer">
+      <div class="row">
+      <!-- Useful links -->
+      <div class="container">
+        <div class="row text-white justify-content-center mt-3 pb-3">
+          <!-- Social Media -->
+          <div class="footer-social py-4 text-center mb-md-0">
+            <span><a href="#"><i class="fab fa-instagram"></i></a></span>
+            <span><a href="#"><i class="fab fa-linkedin"></i></a></span>
+            <span><a href="#"><i class="fab fa-github"></i></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Info -->
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-12">
+                <div class="footer-bottom___info">
+                  Created by Danielle Dacanay | danie.gd12@gmail.com
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </footer>
+  <!--------------------------------------------FOOTER: END------------------------------------------------>
+<!-- Back to top button -->
+<a href="#" class="shadow back-to-top rounded-circle">
+  <i class="fas fa-chevron-up"></i>
+</a>
+    <section id=""
+    <!--link glightbox and add video option-->
+    <script src="assets/vendors/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        'content':'<h1>Danielle Dacanay</h1><h2>Sr. Business Analyst</h2>'
+      });
+    </script>
+
+    <!--glightbox video option
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        'href': 'https://www.youtube.com/watch?v=ioNng23DkIM',
+        'type': 'video',
+        'source': 'youtube', //vimeo, youtube or local
+        'width': 900,
+      });
+    </script>
+    -->
+    <!--glighbox document option
+    'content': document.getElementById('inline-example') -->
+    <!--step 3: link the javascript-->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>

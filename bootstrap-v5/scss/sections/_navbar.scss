@@ -1,0 +1,26 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.menu {
+    //background: linear-gradient(to right, rgba($primary,0.95),rgba($off-white,0.95)); //changed to a mixin
+    //@include gradient;
+    background: $primary;
+    opacity: 0.955;
+
+    li {
+        padding: 0.7rem 0.7rem 0.7rem 0;
+        display:inline-block;
+        a {
+            color: $dark-blue !important;
+            text-transform: capitalize;
+            font-weight: 600;
+            &:active {
+                color: $peach-dark !important;
+            }
+            &:hover {
+                color: $peach-dark !important;
+            }
+
+        }
+    }
+}
