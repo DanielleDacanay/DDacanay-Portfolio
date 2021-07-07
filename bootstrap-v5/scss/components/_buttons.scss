@@ -2,82 +2,153 @@
 @use '../components/mixins' as *;
 
 .btn-rounded {
-    //this mixin hides buttons for smaller devices
-    @include media-breakpoint-down(sm) {
-        display: none;
+  //this mixin hides buttons for smaller devices
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+  //end of mixin
+  position: relative;
+  padding: 1rem 4.375rem 1rem 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  border: 0.1rem solid rgba($white, 0.6);
+  background-color: $white;
+
+  span {
+    position: absolute;
+    background-color: $primary;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 50%;
+    right: 9px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+
+    i {
+      color: $dark-blue;
+      font-size: 1rem;
+      line-height: 2.5rem;
+      background-repeat: no-repeat;
     }
-    //end of mixin
-    position: relative;
-    padding: 1rem 4.375rem 1rem 1.25rem;
-    font-weight: 700;
-    margin: 0;
-    border: 0.1rem solid rgba($white, 0.6);
-    background-color: $white;
+  }
+
+  &:hover {
+    // @include gradient;
+    background-color: $med-blue;
+    color: $white;
 
     span {
-        position: absolute;
-        background-color: $primary;
-        width: 2.5rem;
-        height: 2.5rem;
-        top: 50%;
-        right: 9px;
-        transform: translateY(-50%);
-        border-radius: 50%;
-        background-repeat: no-repeat;
-
-        i {
-            color:$dark-blue;
-            font-size: 1rem;
-            line-height: 2.5rem;
-            background-repeat: no-repeat;
-            
-        }
+      background-color: $dark-blue;
+      i {
+        color: $white;
+      }
     }
-
-    &:hover {
-       // @include gradient;
-       background-color: $med-blue;
-       color: $white;
-    
-        span {
-            background-color: $dark-blue;
-            i {
-                color: $white;
-            }
-        }
-    }
+  }
 }
 
 .btn-submit {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: $dark-blue !important;
-    font-weight: 700;
-    margin: 0;
-    border: 0.15rem solid rgba($peach-dark, 0.5);
-    width: 50%;
-    background-color: $off-white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $dark-blue !important;
+  font-weight: 700;
+  margin: 0;
+  border: 0.15rem solid rgba($peach-dark, 0.5);
+  width: 50%;
+  background-color: $off-white;
 
-    &:hover {
-       // @include gradient;
-       background-color: $peach-dark;
-       color: $white !important;
-    }
+  &:hover {
+    // @include gradient;
+    background-color: $peach-dark;
+    color: $white !important;
+  }
 }
 
 .back-to-top {
-    position: fixed;
-    width: 3rem;
-    height: 3rem;
-    right: 1.875rem;
-    bottom: 1.875rem;
-    z-index: 9999;
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
 
-    i {
-        color: $peach-dark;
-        font-size: 1rem;
-        @include absCenter;
-    }
+  i {
+    color: $peach-dark;
+    font-size: 1rem;
+    @include absCenter;
+  }
 }
+
+.btn-link {
+  position: relative;
+  border: 0.2rem solid $white;
+  border-radius: 10%;
+  height: 100%;
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: $dark-blue;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: rgba($white, 0.2);
+
+  &:hover {
+    // @include gradient;
+    background-color: $white;
+    color: $peach-dark;
+  }
+}
+
+//Square button with top and bottom borders: start
+.btn-one {
+  border-radius: 0.2rem;
+  background-color: rgba($white, 0.2);
+  border-top: 0.3rem solid $white;
+  border-bottom: 0.3rem solid $white;
+  border-left: none;
+  border-right: none;
+
+  color: $dark-blue;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 15px;
+  width: 15rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn-one span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-one span:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f054";
+  font-size: 1.1rem;
+  color: $dark-blue;
+  // content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-one:hover span {
+  padding-right: 25px;
+}
+
+.btn-one:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+//Square button with top and bottom borders: end
+
+

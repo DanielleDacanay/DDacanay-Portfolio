@@ -2,24 +2,25 @@
 
 .display-2 {
     margin-bottom: 1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Karla', sans-serif;
     text-transform: capitalize;
 
     &--intro {
         display: inline-block;
         font-weight: 700;
-        color: $dark-blue;
-        font-family: 'Poppins', sans-serif;
+        color: $peach-dark;
+        font-family: 'Karla', sans-serif;
     }
 
     &--description {
         font-size: 1rem;
+        font-weight: 400;
         display: block;
-        margin-top: 1.2rem;
+        margin-top: 1.1rem;
         text-transform: none;
 
         @include media-breakpoint-up(lg){
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             display: inline-block;
         } 
     }
@@ -27,7 +28,7 @@
 
 .display-3 {
     margin-bottom: 1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Karla', sans-serif;
     text-transform: capitalize;
     text-align: center;
 
@@ -35,7 +36,7 @@
         font-size: 1rem;
         text-transform: capitalize;
         font-weight: 600;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Karla', sans-serif;
         display: inline-block;
         background-image: linear-gradient(to right, $peach-dark, $peach-light);
         background-clip: text;
@@ -54,7 +55,7 @@
     padding-bottom: 2rem;
 
     &__info {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Karla', sans-serif;
         font-size: 0.4rem;
         color: $gray-blue !important;
     }
@@ -67,7 +68,7 @@
 }
 
 .accentText {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Karla', sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
     color: $peach-dark;
@@ -80,7 +81,7 @@
 }
 
 .accentText-header {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Karla', sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
     color: $peach-dark;
@@ -94,7 +95,7 @@
 }
 
 .fieldName{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Karla', sans-serif;
     font-weight: 300;
     font-size: 1rem;
     color: $dark-blue;
