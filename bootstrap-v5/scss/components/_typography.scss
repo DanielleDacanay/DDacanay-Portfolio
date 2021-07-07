@@ -109,7 +109,7 @@
     height: 0.35rem;
     display: block;
     margin: 0 auto;
-    background-color: $primary;
+    background-color: $dark-blue;
 }
 .header-line::after{
     content: "";
@@ -118,7 +118,7 @@
     margin: 0.1rem auto;
     margin-bottom: 0.005rem;
     display: block;
-    background-color: $primary;
+    background-color: $dark-blue;
 }
 
 //Header Line Dark
@@ -142,7 +142,7 @@
 
 //Right border
 .border-right {
-    border-right: 0.1rem solid $light-blue;
+    border-right: 0.1rem solid $med-blue;
     height: 100%;
 }
 
