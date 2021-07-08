@@ -28,7 +28,16 @@
                 <li><a class="nav-link active" aria-current="page" href="#">Home</a></li>
                 <li><a class="nav-link" href="#about">About</a></li>
                 <li><a class="nav-link" href="#work">Work</a></li>
-                <li><a class="nav-link" href="#portfolio">Projects</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Projects
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#portfolio">All Projects</a></li>
+                    <li><a class="dropdown-item" href="#">Design</a></li>
+                    <li><a class="dropdown-item" href="#">Web Development</a></li>
+                  </ul>
+                </li>
                 <li><a href="#connect"><button class="btn btn-link">Contact</button></a></li>
               <!--
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -93,17 +102,19 @@
         <div class="header-line mb-1"></div>
       </div>
     <!--description content-->
-      <div class="row pt-2 pb-2 mt-2 mb-2">
+      <div class="row pt-2 pb-2 mt-4 mb-2">
         <!--intro desc first column-->
-        <div class="col-md-6 border-right">
+        <div class="col-md-6 border-right mt-3">
           <div class="bg-white p-3">
-            <h2 class="fw-bold text-center">Will place description of my interests here.</h2>
+            <h2 class="fw-bold text-center">Converse. Create. Design. Develop.</h2>
           </div>
         </div>
         <!--intro desc second column-->
         <div class="col-md-6">
-          <div class="bg-white p-4 text-start"> <!--text-start aligns text to the left -->
-            <p class="fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+          <div class="bg-white px-4 mt-4 text-start"> <!--text-start aligns text to the left -->
+            <p class="fw-light "> A Business Analyst in the tech industry with Computer Science and Economics degrees who loves art and design - that's me!
+            </p>
+          </h2>
           </div>
         </div>
       </div>
@@ -116,13 +127,13 @@
           <div class="about__content">
             <div class="icon fas fa-project-diagram"></div>
             <h3 class="display-3--title mt-1">Business Analyst</h3>
-            <p class="lh-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, consequuntur natus? Reprehenderit, iste repudiandae quae culpa sed voluptates sit aspernatur odio obcaecati magni alias corrupti tenetur voluptatem numquam!
+            <p class="lh-lg">As a full-time Business Analyst on an Agile government project, I regularly engage with our clients to determine underlying business problems, gather requirements and propose innovative solutions that meet their expectations.
+              In additon, I serve as a Scrum Master, Product Owner and Tester as needed. As part of regular release activities, I maintain documentation such as requirement specifications, conduct Sprint demos for the client and facilitate user acceptance testing.
             </p>
           </div>
         </div>
         <!--BA graphic-->
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about mt-4 py-4 text-end">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about mt-2 text-end">
           <div class="about__pic">
             <img src="images/graphics/BA_graphic.png" alt="BA illustration" class="img-fluid">
           </div>
@@ -131,36 +142,37 @@
       <!-- Business Analyst: end-->
       <!-- UX: start-->
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about mt-4 text-start">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about mt-2 text-start">
           <div class="about__pic">
             <img src="images/graphics/UI_UX_graphic.png" alt="UI illustration" class="img-fluid">
           </div>
         </div>
         <!--UX text-->
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about mt-4">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about mt-2">
           <div class="about__content">
           <div class="icon fas fa-users"></div>
           <h3 class="display-3--title mt-1">UX Research/UI Design</h3>
-          <p class="lh-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, consequuntur natus? Reprehenderit, iste repudiandae quae culpa sed voluptates sit aspernatur odio obcaecati magni alias corrupti tenetur voluptatem numquam!
-          </p>
+          <p class="lh-lg mb-5">
+              With each project release, I continuously learn how client interacts with the system and determine ways to improve the system to fit their needs while enhancing the user experience. 
+              Prior to development, I create visual workflows and mockups to help my Scrum team and the client converge onto one vision. To broaden and strengthen my understanding of the user experience, I am currently part of a FedTech case study under the ACT-IAC Customer Experience (CX) Community of Interest.
+            </p>
         </div>
         </div>
       </div>
       <!-- UX: end -->
       <!-- Web Development: start-->
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about mt-4">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about mt-1">
           <div class="about__content">
           <div class="icon fas fa-code"></div>
           <h3 class="display-3--title mt-1">Web Development</h3>
           <p class="lh-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, consequuntur natus? Reprehenderit, iste repudiandae quae culpa sed voluptates sit aspernatur odio obcaecati magni alias corrupti tenetur voluptatem numquam!
+            While studying Computer Science at the University of Virginia, I learned that I truly enjoyed front-end development and could spend hours developing user interfaces. Since I no longer have the same technical exposure as I did at school during my 9-5 job, I use some of my time outside of work strengthening my technical skills by creating projects and learning new technologies. I am currently working towards becoming a cross-functional Scrum team member (BA/App developer).
           </p>
         </div>
         </div>
         <!--Dev graphic-->
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about mt-4 text-end">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about mt-1 text-end">
           <div class="about__pic">
             <img src="images/graphics/Coding_graphic.png" alt="code illustration" class="img-fluid">
           </div>
@@ -189,18 +201,19 @@
             <div class="accordion-item shadow mb-2">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Business Analyst
+                  <strong>Sr. Business Analyst at Ventera</strong> &nbsp;(2018 - Present)
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>As a full-time senior Business Analyst at Ventera Corporation, my main responsibilities include:</strong>
+                  <strong>My main responsibilities as a Sr. Business Analyst at Ventera Corporation include:</strong>
                   <ul>
                     <li>Engaging with clients to determine underlying business problems</li>
-                    <li>Gathering requirements and proposing innovative solutions that meet their expectations</li>
-                    <li>Learning how end-users interact with the system to determine ways to improve the experience</li>
-                    <li>Create visual workflows and mockups for new functionality</li>
-                    <li>Serving as a Scrum Master and Product as needed</li>
+                    <li>Gathering requirements and proposing innovative solutions that meet their expectations and turning the requirements into user stories</li>
+                    <li>Creating visual workflows and mockups for new functionality</li>
+                    <li>Serving as a Scrum Master and Product Owner as needed</li>
+                    <li>Managing and facilitating demo and user acceptance testing as features are completed</li>
+                    <li>Creating and maintaining documentation that identifies system requirements</li>
                   </ul>
                 </div>
               </div>
@@ -209,12 +222,17 @@
             <div class="accordion-item shadow mb-2">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  ACT-IAC Associates Program
+                  <strong>ACT-IAC Associates Program</strong>&nbsp; 2021 Class
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  The <a class="darkHyperlink" href="https://www.actiac.org/learning/professional-development/associates-overview" target="_blank">ACT-IAC Associates Program</a> gives young professionals in the government and industry the opportunity to build their career management skills in preparation for future leadership roles. As part of this ten-month program, I took part in monthly educational sessions led by subject matter experts within the government IT industry as well as completed a FedTech case study for the Customer Experience (CX) Community of Interest.
+                  <br>
+                  <br>
+                  <a class="darkHyperlink" style="text-decoration: none;" href="#portfolio">Read more about our CX Case Study&nbsp;
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -222,7 +240,7 @@
             <div class="accordion-item shadow mb-2">
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Certifications
+                  <strong>Certifications</strong>
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -243,12 +261,35 @@
             <div class="accordion-item shadow mb-2">
               <h2 class="accordion-header" id="headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  Skills
+                  <strong>Skills</strong>
                 </button>
               </h2>
               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the fourth item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <strong>Industry Knowledge</strong>
+                      <li>Agile Methodologies</li>
+                      <li>Scrum</li>
+                      <li>Requirements Analysis</li>
+                      <li>Software Documentation</li>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <strong>Tools & Technologies</strong>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>SCSS</li>
+                      <li>JavaScript</li>
+                      <li>Bootstrap</li>
+                      <li>Git</li>
+                      <li>Github</li>
+                      <li>Adobe XD</li>
+                      <li>Visio</li>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <strong>Interpersonal Skills</strong>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
