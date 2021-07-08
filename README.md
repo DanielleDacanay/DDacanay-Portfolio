@@ -4,5 +4,4 @@ Learn more about me.
 
 This portfolio was created using Bootstrap v5 and Sass
 
-![Portfolio wireframe](/bootstrap-v5/images/DDacanayPortfolio_wireframe.jpg?raw=true "Portfolio Wireframe")
-<img src="bootstrap/images/DDacanayPortfolio_wireframe.jpg" width="200px" alt="wireframe made with MyDraft" />
+![DDacanayPortfolio_wireframe](https://user-images.githubusercontent.com/11825057/124965950-ad71e600-dff0-11eb-829a-2b3296127f92.jpg)
