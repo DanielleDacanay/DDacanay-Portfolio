@@ -11182,8 +11182,22 @@ textarea.form-control-lg {
   margin-top: 0;
 }
 
+.threeColumn {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .portfolio {
-  padding: 1rem 0;
+  padding: 10rem 0 0 0;
+  width: 100%;
+  height: 100%;
 }
 .portfolio button {
   text-transform: capitalize;
