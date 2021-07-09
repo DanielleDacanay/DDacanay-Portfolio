@@ -1,6 +1,21 @@
 @use '../custom' as *;
 
 .get-started{
-    background-color: $off-white;
+    background-color: $primary;
+    padding: 8rem 0 0 0;
+    width: 100%;
+    height: 100%;
+
+    
 }
+
+.contacts{
+    
+    img {
+        opacity: 50%;
+    }
+
+
+}
+
 

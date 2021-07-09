@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--step 1: set up the viewport-->
+    <title>DDACANAY | Portfolio</title> <!--step 2: give the page a title and link it to the style sheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!--------------------------------------------NAVBAR SECTION: START------------------------------------------------>
+      <nav class="navbar navbar-expand-lg navbar-light menu shadow fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="images/ddacanay.png" width="200px" height="30px"alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <ul class="navbar-nav" style="list-style-type:none;">
+                <li><a class="nav-link active" aria-current="page" href="index.html#home">Home</a></li>
+                <li><a class="nav-link" href="index.html#about">About</a></li>
+                <li><a class="nav-link" href="index.html#work">Work</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Projects
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="projects.html">All Projects</a></li>
+                    <li><a class="dropdown-item" href="#">Design</a></li>
+                    <li><a class="dropdown-item" href="#">Web Development</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html"><button class="btn btn-link">Contact</button></a></li>
+              <!--
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              -->
+            </ul>
+            </div>
+          </div>
+      </nav>
+<!--------------------------------------------NAVBAR SECTION: END------------------------------------------------> 
+<section id="get-started" class="get-started">
+    <div class="container">
+        <div class="row align-items-center">
+        <!--first column-->
+          <div class="col-md-6 intros text-start">
+            <div class="container">
+                <div class="row text-start">
+                  <h1 class="accentText-header mt-4"> Send a message</h1>
+                </div>
+            </div>
+              <div class="form w-100 py-3 px-4">
+                  <form action="#" class="row">
+                    <!--Name field-->
+                    <div class="mb-3">
+                      <label id="name-label" for="name">
+                        <p class="fieldName">Name *</p>
+                      </label>
+                      <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <!--Email field-->
+                    <div class="mb-3">
+                      <label id="email-label" for="email">
+                        <p class="fieldName">Email *</p>
+                      </label>
+                      <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <!--Message field-->
+                    <div class="mb-3">
+                      <label id="message-label" for="message">
+                        <p class="fieldName">Message *</p>
+                      </label>
+                      <textarea id="message" name="message" rows="4" cols="50" class="form-control" required></textarea>
+                    </div>
+                    <!--Submit-->
+                    <input type="submit" id="submit" class="btn btn-submit mt-5 pt-3 pb-3" value="Submit">
+                    </input>
+                  </form>
+              </div>
+          </div>
+        <!-- <button type="button" class="btn-one"><span>View my projects</span></button> -->
+
+        <!--second column-->
+          <div class="col-md-6 contacts text-center">
+              <div class="row">
+                <a href="#portfolio">
+                    <button type="button" class="btn-one">            
+                      <span><i class="fas fa-at"></i> Email
+                      </span>
+                    </button>
+                  </a>
+                  <a href="#portfolio">
+                    <button type="button" class="btn-one">            
+                      <span><i class="fab fa-github"></i> Github
+                      </span>
+                    </button>
+                  </a>
+                  <a href="#portfolio">
+                    <button type="button" class="btn-one">            
+                      <span><i class="fab fa-linkedin"></i> LinkedIn
+                      </span>
+                    </button>
+                  </a>
+              </div>
+
+          </div>
+        </div>
+      </div>
+</section>
+  <!--------------------------------------------FOOTER: START------------------------------------------------>
+  <footer class="footer">
+    <div class="row">
+    <!-- Useful links -->
+    <div class="container">
+      <div class="row text-white justify-content-center mt-3 pb-3">
+        <!-- Social Media -->
+        <div class="footer-social py-4 text-center mb-md-0">
+          <span><a href="#"><i class="fab fa-instagram"></i></a></span>
+          <span><a href="https://www.linkedin.com/in/danielle-dacanay-9385aa143/" target="_blank"><i class="fab fa-linkedin"></i></a></span>
+          <span><a href="https://github.com/DanielleDacanay" target="_blank"><i class="fab fa-github"></i></a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Info -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-12">
+              <div class="footer-bottom___info">
+                Created by Danielle Dacanay | danie.gd12@gmail.com
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</footer>
+<!--------------------------------------------FOOTER: END------------------------------------------------>
+<!-- Back to top button -->
+<a href="#" class="shadow back-to-top rounded-circle">
+<i class="fas fa-chevron-up"></i>
+</a>
+  <section id=""
+  <!--link glightbox and add video option-->
+  <script src="assets/vendors/js/glightbox.min.js"></script>
+  <script type="text/javascript">
+    const lightbox = GLightbox({
+      'content':'<h1>Danielle Dacanay</h1><h2>Sr. Business Analyst</h2>'
+    });
+  </script>
+
+  <!--glightbox video option
+  <script type="text/javascript">
+    const lightbox = GLightbox({
+      'href': 'https://www.youtube.com/watch?v=ioNng23DkIM',
+      'type': 'video',
+      'source': 'youtube', //vimeo, youtube or local
+      'width': 900,
+    });
+  </script>
+  -->
+  <!--glighbox document option
+  'content': document.getElementById('inline-example') -->
+  <!--step 3: link the javascript-->
+  <script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -11107,6 +11107,9 @@ textarea.form-control-lg {
 
 .connect {
   padding: 0 0 1rem 0;
+  padding: 8rem 0 0 0;
+  width: 100%;
+  height: 100%;
 }
 .connect__logo-box {
   max-width: 100%;
@@ -11250,7 +11253,14 @@ textarea.form-control-lg {
 }
 
 .get-started {
-  background-color: #fffbfb;
+  background-color: #ebf1f4;
+  padding: 8rem 0 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contacts img {
+  opacity: 50%;
 }
 
 .footer {
