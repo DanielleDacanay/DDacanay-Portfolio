@@ -28,16 +28,7 @@
                 <li><a class="nav-link active" aria-current="page" href="index.html#home">Home</a></li>
                 <li><a class="nav-link" href="index.html#about">About</a></li>
                 <li><a class="nav-link" href="index.html#work">Work</a></li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Projects
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="projects.html">All Projects</a></li>
-                    <li><a class="dropdown-item" href="#">Design</a></li>
-                    <li><a class="dropdown-item" href="#">Web Development</a></li>
-                  </ul>
-                </li>
+                <li><a class="nav-link" href="projects.html">Projects</a></li>
                 <li><a href="contact.html"><button class="btn btn-link">Contact</button></a></li>
               <!--
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -56,19 +47,20 @@
       </div>
 
       <!-- Filter buttons -->
-      <div class="row mb-5 mt-1 g-3 text-center">
+      <div id="myBtns" class="row mb-5 mt-1 g-3 text-center">
         <div class="col-md-12">
-          <button class="btn btn-outline-secondary" type="button">All</button>
-          <button class="btn btn-outline-secondary" type="button">Websites</button>
-          <button class="btn btn-outline-secondary" type="button">Mockups</button>
+          <button class="btn btn-outline-secondary" type="button" onclick="filterProjects('all')">All</button>
+          <button class="btn btn-outline-secondary" type="button" onclick="filterProjects('website')">Websites</button>
+          <button class="btn btn-outline-secondary" type="button" onclick="filterProjects('mockup')">Mockups</button>
         </div>
       </div>
 
       <!-- Portfolio items -->
+      <div class="container">
       <div class="row">
         <!-- Project 1 -->
         <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
+          <div class="portfolio-box shadow website">
             <a href="index.html" target="_blank">
             <img src="images/portfolio/webPortfolioProject.png" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
             <div class="portfolio-info">
@@ -82,7 +74,7 @@
         </div>
         <!-- Project 2 -->
         <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
+          <div class="portfolio-box shadow website">
             <img src="images/portfolio/project2.png" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
@@ -94,7 +86,7 @@
         </div>
         <!-- Project 3 -->
         <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
+          <div class="portfolio-box shadow website">
             <img src="images/portfolio/project3.jpeg" alt="portfolio 3 image" title="portfolio 3 picture" class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
@@ -106,7 +98,7 @@
         </div>
         <!-- Project 4 -->
         <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
+          <div class="portfolio-box shadow mockup">
             <img src="images/portfolio/project4.jpg" alt="portfolio 4 image" title="portfolio 4 picture" class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
@@ -118,7 +110,7 @@
         </div>
         <!-- Project 5 -->
         <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
+          <div class="portfolio-box shadow website">
             <img src="images/portfolio/project5.jpeg" alt="portfolio 5 image" title="portfolio 5 picture" class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
@@ -130,7 +122,7 @@
         </div>        
         <!-- Project 6 -->
         <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
+          <div class="portfolio-box shadow mockup">
             <img src="images/portfolio/project6.jpeg" alt="portfolio 6 image" title="portfolio 6 picture" class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
@@ -142,7 +134,7 @@
         </div> 
         <!-- Project 7 -->
         <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
+          <div class="portfolio-box shadow mockup">
             <img src="images/portfolio/project7.jpeg" alt="portfolio 7 image" title="portfolio 7 picture" class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
@@ -154,7 +146,7 @@
         </div> 
         <!-- Project 8 -->
         <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
+          <div class="portfolio-box website shadow">
             <img src="images/portfolio/project8.jpeg" alt="portfolio 8 image" title="portfolio 8 picture" class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
@@ -166,7 +158,7 @@
         </div> 
         <!-- Project 9 -->
         <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
+          <div class="portfolio-box website shadow">
             <img src="images/portfolio/project9.jpeg" alt="portfolio 9 image" title="portfolio 9 picture" class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
@@ -176,10 +168,10 @@
             </div>
           </div>
         </div> 
-        
         </div>
       </div>
     </div>
+  </div>
   </section>
 <!--------------------------------------------PROJECT CONTENT: END-------------------------------------------------------->
 
@@ -214,29 +206,63 @@
 <!--------------------------------------------FOOTER: END------------------------------------------------>
 <!-- Back to top button -->
 <a href="#" class="shadow back-to-top rounded-circle">
-<i class="fas fa-chevron-up"></i>
+  <i class="fas fa-chevron-up"></i>
 </a>
-  <section id=""
-  <!--link glightbox and add video option-->
-  <script src="assets/vendors/js/glightbox.min.js"></script>
-  <script type="text/javascript">
-    const lightbox = GLightbox({
-      'content':'<h1>Danielle Dacanay</h1><h2>Sr. Business Analyst</h2>'
-    });
-  </script>
 
-  <!--glightbox video option
-  <script type="text/javascript">
-    const lightbox = GLightbox({
-      'href': 'https://www.youtube.com/watch?v=ioNng23DkIM',
-      'type': 'video',
-      'source': 'youtube', //vimeo, youtube or local
-      'width': 900,
-    });
+<!-- Filtering Projects -->
+<script>
+  filterProjects("all")
+  function filterProjects(c) {
+    var x, i;
+    x = document.getElementsByClassName("portfolio-box");
+    if (c == "all"){
+      c = "";
+    }
+  // Add the .show class to the filtered elements, and remove the .show class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+      removeShow(x[i], "show");
+      if (x[i].className.indexOf(c) > -1){
+        addShow(x[i], "show");
+      } 
+    }
+  }
+
+// Show filtered elements
+function addShow(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function removeShow(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add "active" class to the current filter button
+var btnContainer = document.getElementById("myBtns");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
   </script>
-  -->
-  <!--glighbox document option
-  'content': document.getElementById('inline-example') -->
   <!--step 3: link the javascript-->
   <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
