@@ -119,6 +119,7 @@
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+
 }
 
 .btn-one span {
@@ -148,6 +149,56 @@
 .btn-one:hover span:after {
   opacity: 1;
   right: 0;
+}
+//Square button with top and bottom borders: end
+
+//Square button with top and bottom borders: start
+.btn-one-blue {
+  border-radius: 0.2rem;
+  background-color: rgba($primary, 0.7);
+  border-top: 0.3rem solid $med-blue;
+  border-bottom: 0.3rem solid $med-blue;
+  border-left: none;
+  border-right: none;
+
+  color: $dark-blue;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 15px;
+  width: 15rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+}
+
+.btn-one-blue span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-one-blue span:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f053";
+  font-size: 1.1rem;
+  color: $dark-blue;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.btn-one-blue:hover span {
+  padding-left: 25px;
+}
+
+.btn-one-blue:hover span:after {
+  opacity: 1;
+  left: 0;
 }
 //Square button with top and bottom borders: end
 
