@@ -10831,6 +10831,29 @@ textarea.form-control-lg {
   transform: translate(-50%, -50%);
 }
 
+.back-to-prev {
+  position: fixed;
+  width: 9rem;
+  height: 3rem;
+  left: 1.875rem;
+  top: 6rem;
+  z-index: 9999;
+}
+.back-to-prev i {
+  color: #f98365;
+  font-size: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.back-to-prev i p {
+  display: inline;
+  color: #f98365;
+  font-size: 1rem;
+  font-family: "Karla", sans-serif;
+  margin-left: 0.4rem;
+  text-decoration: none;
+}
+
 .btn-link {
   position: relative;
   border: 0.2rem solid #fff;
@@ -10907,7 +10930,7 @@ textarea.form-control-lg {
   font-size: 1.1rem;
   font-weight: 600;
   padding: 15px;
-  width: 15rem;
+  width: 12rem;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;

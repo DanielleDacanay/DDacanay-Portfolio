@@ -81,6 +81,31 @@
   }
 }
 
+.back-to-prev {
+  position: fixed;
+  width: 9rem;
+  height: 3rem;
+  left: 1.875rem;
+  top: 6rem;
+  z-index: 9999;
+
+  i {
+    color: $peach-dark;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  
+  p{
+    display: inline;
+    color: $peach-dark;
+    font-size: 1rem;
+    font-family: 'Karla', sans-serif;
+    margin-left: 0.4rem;
+    text-decoration: none;
+  }
+}
+}
+
 .btn-link {
   position: relative;
   border: 0.2rem solid $white;
@@ -166,7 +191,7 @@
   font-size: 1.1rem;
   font-weight: 600;
   padding: 15px;
-  width: 15rem;
+  width: 12rem;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
